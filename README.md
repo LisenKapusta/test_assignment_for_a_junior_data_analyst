@@ -149,7 +149,7 @@ classified_data = classify_customers(df)
 transition_classified_data = classify_transition_states(classified_data)
 ```
 
-####Visualizing Customer Lifecycle
+#### Visualizing Customer Lifecycle
 Create a visualization of the customer lifecycle using Graphviz.
 
 ```bash
@@ -249,8 +249,10 @@ fig = go.Figure(
 fig.update_layout(title_text="Миграция клиентов по сегментам и периодам", font_size=15)
 fig.show()
 ```
-### To view the Sankey diagram, please follow this link:
+### To view the Sankey diagram, please follow this link or download the file in the "images" folder:
 [sankey_diagram](./images/sankey_diagram.html)
+image example:
+![](./images/)
 #### Heatmap
 A heatmap is used to show the migration of customers across different segments over time.
 ```bash
