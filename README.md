@@ -149,7 +149,7 @@ classified_data = classify_customers(df)
 transition_classified_data = classify_transition_states(classified_data)
 ```
 
-####Visualizing Customer Lifecycle
+#### Visualizing Customer Lifecycle
 Create a visualization of the customer lifecycle using Graphviz.
 
 ```bash
@@ -191,6 +191,7 @@ def create_client_lifecycle():
 
 create_client_lifecycle()
 ```
+![client_lifecycle](./images/client_lifecycle.png)
 #### Visualizing Customer Transitions
 
 Sankey Diagram
@@ -248,6 +249,10 @@ fig = go.Figure(
 fig.update_layout(title_text="Миграция клиентов по сегментам и периодам", font_size=15)
 fig.show()
 ```
+### To view the Sankey diagram, please follow this link or download the file in the "images" folder:
+[sankey_diagram](./images/sankey_diagram.html)
+image example:
+![](./images/)
 #### Heatmap
 A heatmap is used to show the migration of customers across different segments over time.
 ```bash
@@ -265,6 +270,7 @@ plt.xlabel("Статусы")
 plt.ylabel("Месяц")
 plt.show()
 ```
+![map](./images/map.png)
 #### Forecasting Customer Segments
 
 Forecast Setup
@@ -343,6 +349,7 @@ for ax, (group, forecast) in zip(axes, results.items()):
 plt.tight_layout(rect=[0, 0.03, 1, 0.95])
 plt.show()
 ```
+![plots](./images/plots.png)
 #### Heatmap of Complete Data
 Plotting a heatmap of the combined historical and forecasted data.
 ```bash
@@ -355,6 +362,7 @@ plt.xlabel("Месяц")
 plt.ylabel("Группы")
 plt.show()
 ```
+![heatmap_forecast.png](./images/heatmap_forecast.png)
 #### Additional Forecasts
 Generating forecasts by filling NaN values with the mean and applying the Exponential Smoothing method.
 ```bash
