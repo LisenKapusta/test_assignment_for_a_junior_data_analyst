@@ -252,7 +252,7 @@ fig.show()
 ### To view the Sankey diagram, please follow this link or download the file in the "images" folder:
 [sankey_diagram](./images/sankey_diagram.html)
 image example:
-![](./images/)
+![sankey_diagram_image.png](./images/sankey_diagram_image.png)
 #### Heatmap
 A heatmap is used to show the migration of customers across different segments over time.
 ```bash
